@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signe astrologique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <main>
+        <form name="sign" action="" method="get">
+            <h1>Informations</h1>
+            <div>
+                <label for="old">Année de naissance :</label>
+                <input type="text" id="Année" name="Année">
+            </div>
+                	<label for="old">Mois de naissance :</label><select name="Mois">
+						<option value="x">Choisissez un mois</option>
+						<option value="1">Janvier</option>
+						<option value="2">Février</option>
+						<option value="3">Mars</option>
+						<option value="4">Avril</option>
+						<option value="5">Mai</option>
+						<option value="6">Juin</option>
+						<option value="7">Juillet</option>
+						<option value="8">Août</option>
+						<option value="9">Septembre</option>
+						<option value="10">Octobre</option>
+						<option value="11">Novembre</option>
+						<option value="12">Décembre</option>
+					</select>
+            </div>
+            <div>
+                <label for="old">Jour de naissance :</label>
+                <input type="text" id="Jour" name="Jour">
+            </div>
+            <tr>
+				<td colspan="2">
+					<div align="center">
+						<input type="button" value="Calculer" onClick="Calculer();" />
+					</div>
+				</td>
+			</tr>
+			<div>
+				<td>Votre signe du zodiaque :</td>
+				<td>
+					<input type="text" name="signe" size="12">
+				</td>
+			</div>
+			<div>
+				<td>Votre signe chinois :</td>
+				<td>
+					<input type="text" name="signechinois" size="12">
+				</td>
+			</div>
+        </form>
+    </main>
+
+<button id="myButton">Afficher l'image</button>
+<img id="myImage" src="image/signe.jpg" style="display:none;">
+
+<script>
+  var button = document.getElementById("myButton");
+  var image = document.getElementById("myImage");
+
+  button.addEventListener("click", function() {
+    image.src = "image/signe.jpg";
+    image.style.display = "block";
+  });
+</script>
+
+  <script src="java.js"></script>
+
+
+</body>
+
+</html>
